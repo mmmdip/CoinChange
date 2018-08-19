@@ -16,6 +16,8 @@ def makeChange( coins, amount ):
                 solution = temp_solution
         elif coin == amount:
             solution = 1
+        elif coin > amount:
+            break
     return solution
 
 def main():
